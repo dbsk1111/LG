@@ -1,0 +1,79 @@
+body.subpage{
+  main .container{
+    display: flex;
+    #lnb{
+      flex: 0 0 230px;
+      box-sizing: border-box;
+      padding-right: 50px;
+      ul{
+        li{
+          border-bottom: 1px solid $borderColor;
+          a{
+            display: inline-block;
+            padding-left: 20px;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            font-size: $fontSizeMid;
+            text-transform: capitalize;
+            box-sizing: border-box;
+            transition: .4s;
+            &:hover{
+              padding-left: 40px;
+            }
+            &.on{
+              // color: $point;
+              color: white;
+              background: $point;
+              // background: $gbtnColor;
+            }
+          }
+        }
+      }
+      // lnb end ↑
+    }
+    .content{
+      flex: 1;
+    }
+    .sub_title span{
+      color: $fontColorTitle;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 8px;
+      line-height: 43px;
+      text-transform: capitalize;
+      &:before{
+        content: '';
+        position: absolute;
+        height: 3px;
+        background: $point;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .inner{
+      // 본문 사이의 구분선
+      & + .inner{
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px solid $borderColorLight;
+      }
+      table{
+        margin-top: 50px;
+        & + .gbtn{
+          margin-top: 20px;
+          float: right;
+        }
+      }
+      &.kakaomap{
+        margin-top: 50px;
+      }
+      .box{
+        flex-wrap:wrap;
+      }
+    }
+
+    // container end ↑
+  }
+}
