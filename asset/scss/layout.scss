@@ -70,7 +70,7 @@
                height: 40px;
              }
              &:hover{
-               background: $point;
+               background: $primaryColor;
                a{
                  color: white;
                }
@@ -140,7 +140,7 @@
       }
       &:after{
        width: 60px;
-       background: $point;
+       background: $primaryColor;
        background: $borderColorSub;
       }
      }

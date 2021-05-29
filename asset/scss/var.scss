@@ -7,7 +7,6 @@ $siteWidth: 1320px;
 $fontSizeSmall: 12px;
 $fontSizeNormal: 16px;
 $fontSizeMid: 18px;
-$fontSizeBig: 21px;
 
 // title text size
 $titleFontSizeSmall: 21px;
@@ -18,7 +17,7 @@ $titleSizeBigger: 48px;
 
 
 // primary color
-$point: #a50034;
+$primaryColor: #a50034;
 
 // background color
 $layoutBg: #fff;
@@ -28,15 +27,13 @@ $fontColorWhite: #fff;
 $fontColorBlack: #000;
 $fontColorBasic: #666;
 $fontColorTitle: #333;
-$fontColorPrimary: #a50034;
-$fontColorHover: #e3a936;
+$fontColorHover: #a50034;
 
 // border color
 $borderColorLight: #ddd;
 $borderColor: #666;
 $borderColorSub: #333;
 $borderColorHistory: #eee;
-$borderColorPrimary: #a50034;
 
 // button color, Global button
 $gbtnColor: #333;
@@ -44,9 +41,5 @@ $gbtnColorHover: #fff;
 $gbtnBgColor: #fff;
 $gbtnBgColorHover: #333;
 
-
-
-
 //table bg
-$tableBg2: #b8944d;
 $tableBg: #f4f4f4;

@@ -51,7 +51,7 @@
         height: 2px;
         top: 50%;
         left: -15px;
-        border: 2px solid $point;
+        border: 2px solid $primaryColor;
         transform: translateY( -50%) rotate( 45deg );
       }
     }
@@ -97,13 +97,6 @@
   &.reverse{
     flex-direction: row-reverse;
   }
-  strong{
-    font-size: $titleSizeBig;
-    color: $fontColorTitle;
-  }
-  p{
-    font-size: $fontSizeBig;
-  }
 }
 
 .history{
@@ -128,7 +121,7 @@
       .year{
         position: relative;
         flex: 0 0 80px;
-        color: $point;
+        color: $primaryColor;
         font-size: $titleSizeMid;
         font-weight: bold;
         padding: 0 0 0 40px;
@@ -255,7 +248,7 @@
       transition: transform .4s;
     }
     &.on:before{
-      color: $point;
+      color: $primaryColor;
     }
     &.on:after{
       transform: rotate( -90deg );
@@ -303,11 +296,11 @@
   &.small_size{
   }
   &.point{
-    color: $point;
-    border: 1px solid $point;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
     &:hover{
       color: $fontColorWhite;
-      background: $point;
+      background: $primaryColor;
     }
   }
   &.gray{
@@ -332,10 +325,6 @@
   }
 }
 
-.point{
-  color: $point;
-}
-
 .bubble{
   margin: 0 auto;
   padding: 0 1%;
@@ -344,23 +333,25 @@
   line-height: 60px;
   color: $fontColorWhite;
   text-align: center;
-  background: $point;
+  background: $primaryColor;
   border-radius: 50px;
   box-sizing: border-box;
+}
+
+.point{
+  color: $primaryColor;
 }
 
 .black{
   color: $fontColorTitle;
 }
 
-
-
 .notice_new:before{
   content: 'NEW ';
   position: relative;
   margin-right: 10px;
   top: -2px;
-  color: $point;
+  color: $primaryColor;
   font-size: $fontSizeSmall;
 }
 

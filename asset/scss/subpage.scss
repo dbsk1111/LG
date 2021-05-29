@@ -24,9 +24,8 @@ body.subpage{
               padding-left: 40px;
             }
             &.on{
-              // color: $point;
-              color: white;
-              background: $point;
+              color: $fontColorWhite:;
+              background: $primaryColor;
               // background: $gbtnColor;
             }
           }
@@ -48,7 +47,7 @@ body.subpage{
         content: '';
         position: absolute;
         height: 3px;
-        background: $point;
+        background: $primaryColor;
         right: 0;
         left: 0;
         bottom: 0;
@@ -67,5 +66,16 @@ body.subpage{
     }
 
     // container end ↑
+  }
+  &.product{
+    .items{
+      strong{
+        font-size: $titleSizeBig;
+        color: $fontColorTitle;
+      }
+      p{
+        font-size: $titleFontSizeSmall;
+      }
+    }
   }
 }

@@ -148,15 +148,6 @@ address {
   flex-direction: row-reverse;
 }
 
-.box strong {
-  font-size: 32px;
-  color: #333;
-}
-
-.box p {
-  font-size: 21px;
-}
-
 .history {
   position: relative;
 }
@@ -802,4 +793,13 @@ body.subpage main .container .inner + .inner {
 
 body.subpage main .container .inner .box {
   flex-wrap: wrap;
+}
+
+body.subpage.product .items strong {
+  font-size: 32px;
+  color: #333;
+}
+
+body.subpage.product .items p {
+  font-size: 21px;
 }
