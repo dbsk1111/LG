@@ -28,7 +28,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #666;
   transition: color .4s, background .4s;
 }
 
@@ -46,14 +46,12 @@ address {
   padding: 50px;
   flex: 100%;
   flex-shrink: 0;
-  font-size: 18px;
 }
 
 .box .items .title {
   color: #000;
-  font-size: 26px;
   position: relative;
-  margin-left: 20px;
+  margin: 0 0 10px 20px;
 }
 
 .box .items .title:before {
@@ -249,7 +247,7 @@ address {
   content: 'Q';
   position: absolute;
   left: 20px;
-  transition: color .3s;
+  transition: color .4s;
 }
 
 .faq_bbs dt:after {
@@ -262,7 +260,7 @@ address {
   height: 24px;
   background: url("../img/community/btn-arr-24x24-black.svg") no-repeat;
   transform: rotate(90deg);
-  transition: transform .3s;
+  transition: transform .4s;
 }
 
 .faq_bbs dt.on:before {
@@ -274,7 +272,7 @@ address {
 }
 
 .faq_bbs dt, .faq_bbs dt + dd {
-  transition: background .3s;
+  transition: background .4s;
 }
 
 .faq_bbs dt.on, .faq_bbs dt.on + dd {
@@ -395,6 +393,7 @@ table th {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
 }
 
 table th:nth-child(2) {
@@ -419,6 +418,30 @@ table th, table td:not(:first-child) {
 
 table a {
   color: #666;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.pagination a.active {
+  color: #000;
+}
+
+.pagination a img {
+  width: 100%;
+  vertical-align: bottom;
 }
 
 #wrap {
@@ -469,6 +492,8 @@ table a {
 #wrap #header #top_nav ul li a {
   line-height: 60px;
   height: 60px;
+  color: #000;
+  font-weight: 500;
 }
 
 #wrap #header #top_nav ul li:hover .submenu {
@@ -482,10 +507,12 @@ table a {
   border: 1px solid #666;
   visibility: hidden;
   top: calc( 100% - 3px);
-  left: 0;
+  left: 50%;
   text-transform: capitalize;
+  transform: translateX(-50%);
   opacity: 0;
   transition: opacity .4s, top .4s;
+  text-align: center;
 }
 
 #wrap #header #top_nav ul li .submenu li {
@@ -506,7 +533,7 @@ table a {
 }
 
 #wrap #header #top_nav ul li .submenu li:hover {
-  background: #333;
+  background: #a50034;
 }
 
 #wrap #header #top_nav ul li .submenu li:hover a {
@@ -582,20 +609,12 @@ table a {
   padding: 10px 0;
 }
 
-#wrap #footer .container .row .column ul li a {
-  color: #666;
-}
-
 #wrap #footer .container .row .column ul li:nth-child(1) {
   padding-top: 0;
 }
 
 #wrap #footer .container .row .column p {
   line-height: 1.8;
-}
-
-#wrap #footer .container .row .column p a {
-  color: #666;
 }
 
 #wrap #footer .container .row .column.footer_logo {
@@ -696,7 +715,9 @@ body.subpage main .container #lnb ul li a {
   width: 100%;
   height: 100%;
   line-height: 50px;
+  color: #333;
   font-size: 18px;
+  font-weight: 500;
   text-transform: capitalize;
   box-sizing: border-box;
   transition: .4s;

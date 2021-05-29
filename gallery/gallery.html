@@ -5,147 +5,288 @@
   <title>Introduce</title>
   <meta name="description" content="sass site">
   <link rel="stylesheet" href="../asset/css/style.css">
-  <link rel="stylesheet" href="../asset/css/gallery_slide.css">
+  <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../asset/css/swiper_custom.css">
   <!-- <script src="../js/jquery.min.js"></script> -->
   <script src="../asset/js/jquery-3.6.0.js"></script>
-  <script defer src="../asset/js/jquery.nicescroll.min.js"></script>
-  <script defer src="../asset/js/gallery.js"></script>
-
-  <script src="../js/common.js"></script>
+  <script src="../asset/js/swiper-bundle.min.js"></script>
+  <!-- <script defer src="../asset/js/jquery.nicescroll.min.js"></script> -->
+  <!-- <script defer src="../asset/js/swiper-bundle.js"></script> -->
+  <!-- <script src="../js/common.js"></script> -->
   <!--[if lt IE 9]>
 <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-</head>
-<body class="subpage">
-  <div id="wrap">
-    <header id="header">
-      <!-- 헤더 영역 -->
-      <h1 id="top_logo"><a href="../index.html"><img src="../asset/img/ico_logo.png" alt="LG전자 로고"><span>LG전자</span></a></h1>
-      <nav id="top_nav">
-        <ul>
-          <li>
-            <a href="../company/introduce.html">기업정보</a>
-            <ul class="submenu">
-              <li><a href="../company/introduce.html">회사소개</a></li>
-              <li><a href="../company/ci.html">브랜드</a></li>
-              <li><a href="../company/history.html">역사</a></li>
-            </ul>
-          </li>
-          <li><a href="../product/product.html">제품</a></li>
-          <li><a href="../gallery/gallery.html">갤러리</a></li>
-          <li>
-            <a href="../community/notice.html">커뮤니티</a>
-            <ul class="submenu">
-              <li><a href="../community/notice.html">공지사항</a></li>
-              <li><a href="../community/faq.html">FAQ</a></li>
-            </ul>
-          </li>
-          <li><a href="../location/location.html">찾아오는 길</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Link Swiper's CSS -->
+    <!-- Demo styles -->
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="subpage">
+    <div id="wrap">
+      <header id="header">
+        <!-- 헤더 영역 -->
+        <h1 id="top_logo"><a href="../index.html"><img src="../asset/img/ico_logo.png" alt="LG전자 로고"><span>LG전자</span></a></h1>
+        <nav id="top_nav">
+          <ul>
+            <li>
+              <a href="../company/introduce.html">기업정보</a>
+              <ul class="submenu">
+                <li><a href="../company/introduce.html">회사소개</a></li>
+                <li><a href="../company/ci.html">브랜드</a></li>
+                <li><a href="../company/history.html">역사</a></li>
+              </ul>
+            </li>
+            <li><a href="../product/product.html">제품</a></li>
+            <li><a href="../gallery/gallery.html">갤러리</a></li>
+            <li>
+              <a href="../community/notice.html">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="../community/notice.html">공지사항</a></li>
+                <li><a href="../community/faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li><a href="../location/location.html">찾아오는 길</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
       <!-- 컨텐츠 영역 -->
       <div class="container">
         <!-- 왼쪽메뉴 -->
         <aside id="lnb">
           <ul class="submenu">
-            <li><a href="../gallery/gallery.html" class="on">Gallery</a></li>
+            <li><a href="../gallery/gallery.html" class="on">갤러리</a></li>
           </ul>
         </aside>
         <!-- 컨텐츠 본문 -->
         <div class="content">
-          <h2 class="sub_title"><span>gallery</span></h2>
+          <h2 class="sub_title"><span>갤러리</span></h2>
           <div class="inner">
             <!-- 상단 영역 -->
             <div class="box expand">
               <div class="items">
-                <section id="content">
-                  <div id="gallery_img">
-                    <div id="image"></div>
-                    <img src="images/icons/left.png" id="lefty">
-                    <img src="images/icons/right.png" id="righty">
-                    <img src="images/icons/play.png" id="play">
-                    <img src="images/icons/pause.png" id="pause">
-                    <img src="images/icons/expand.png" id="expand">
+                <div class="swiper_wrap">
+                  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-text">이동 노동자 쉼터에 LG 휘센 에어컨 기부</div>
+                        <img src="../asset/img/gallery/LG-WHISEN-Air-Conditioner-Donation-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">LG전자, Life’s Good 캠페인서<br>MZ세대와 소통</div>
+                        <img src="../asset/img/gallery/LG_Lifes-Good-Music-Project.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">LG전자, 국내 가전업계 첫 無人매장 열었다</div>
+                        <img src="../asset/img/gallery/LGE_LG-best-shop_Unmanned_01-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">LG전자, 美서 라방 플랫폼 첫 선</div>
+                        <img src="../asset/img/gallery/LG-SHOP-LIVE.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">LG전자 스마트홈 앱 ‘LG 씽큐’ 업계 최초 서비스 분야 인공지능 품질인증 획득</div>
+                        <img src="../asset/img/gallery/LG-ThinQ_App-Care-Servise_AIAIR-Purifier.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">美-英서 선보인 3D 아트 주인공은 LG 시그니처</div>
+                        <img src="../asset/img/gallery/LG-SIGNATURE_3D-Art_01.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">日 최고 권위 전문가들도 인정한 LG 올레드 에보(evo)</div>
+                        <img src="../asset/img/gallery/LG-OLED-evo-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-text">LG 퓨리케어 360°공기청정기 구매고객 2명 중 1명은 ‘알파’ 선택</div>
+                        <img src="../asset/img/gallery/0520-air-purifier-360_01-1024x682.jpg"/>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                   </div>
-                  <div id="thumbs">
-                    <div class="thumbs_style"> <img src="images/thumbs/a.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/b.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/c.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/d.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/e.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/f.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/g.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/h.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/i.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/j.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/k.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/l.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/m.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/n.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/o.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/p.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/q.jpg"> </div>
-                    <div class="thumbs_style"> <img src="images/thumbs/r.jpg"> </div>
+                  <div thumbsSlider="" class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG-WHISEN-Air-Conditioner-Donation-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG_Lifes-Good-Music-Project.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LGE_LG-best-shop_Unmanned_01-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG-SHOP-LIVE.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG-ThinQ_App-Care-Servise_AIAIR-Purifier.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG-SIGNATURE_3D-Art_01.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/LG-OLED-evo-1.jpg"/>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../asset/img/gallery/0520-air-purifier-360_01-1024x682.jpg"/>
+                      </div>
+                    </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <!-- 하단 영역 -->
     <footer id="footer">
       <div class="footer_top">
         <div class="container">
           <div class="row">
             <div class="column footer_logo">
               <!-- footer logo -->
-              <h3>logo</h3>
+              <h3><a href="../index.html"><img src="../asset/img/ico_logo.png" alt="LG전자 로고"><span>LG전자</span></a></h3>
             </div>
-            <div class="column">
+            <div class="column site_map">
               <!-- site map -->
               <h4>SITE MAP</h4>
               <ul>
-                <li><a href="../company/introduce.html">Company</a></li>
-                <li><a href="../product/product.html">Product</a></li>
-                <li><a href="../gallery/gallery.html">Gallery</a></li>
-                <li><a href="../notice/notice.html">Community</a></li>
-                <li><a href="../location/location.html">Location</a></li>
+                <li>
+                  <a href="../company/introduce.html">기업정보</a>
+                </li>
+                <li><a href="../product/product.html">제품</a></li>
+                <li><a href="../gallery/gallery.html">갤러리</a></li>
+                <li><a href="../community/notice.html">커뮤니티</a></li>
+                <li><a href="../location/location.html">찾아오는 길</a></li>
               </ul>
             </div>
-            <div class="column">
+            <div class="column contact">
               <h4>CONTACT US</h4>
-              <p>
-                A108 Adam street<br>Newyork, Ny 535022<br>United states<br>
-                <strong>phone&nbsp;:&nbsp;</strong><a href="tel:+82-010-0000-0000">+82-010-0000-0000</a><br>
-                <strong>Email&nbsp;:&nbsp;</strong><a href="mailto:aaa@gmail.com">aaa@gmail.com</a>
+              <ul>
+                <li><span>대표이사</span>&nbsp;권봉석, 배두용</li>
+                <li><span>주소</span>&nbsp;<address>서울시 영등포구 여의대로 128 LG트윈타워</address></li>
+                <li><span>통신판매업신고번호</span>&nbsp;<a href="#">제1997-00084호</a></li>
+                <li><span>대표번호</span>&nbsp;<a href="tel:+82-02-3777-1114">02-3777-1114</a></li>
+                <li><span>제품 및 서비스 문의</span>&nbsp;<a href="tel:+82-1544-7777">1544-7777</a></li>
+              </ul>
               </p>
             </div>
             <div class="column news">
               <h4>NEWS</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p>LG전자 홈페이지 서비스 일시 점검 안내, 항상 LG전자 홈페이지를 이용해주셔서 감사드립니다. 보다 나은 서비스를 제공하기 위한 시스템 점검 작업으로 해당 작업 시간 동안 서비스 이용이 일시 중지될 예정이오니, 이용에 참고하여 주시기 바랍니다.</p>
               <form action="">
                 <input type="search" name="search">
-                <input type="submit" value="search">
+                <input type="submit" value="검색">
               </form>
             </div>
           </div>
         </div>
-
       </div>
       <div class="container">
         <!-- footer 하단 영역 -->
         <div class="copyright">
-          &copy; <strong>mypage</strong> .All Right Reserved.
-        </div>
-        <div class="credits">
-          Designed by <a href="mailto:aaa@gmail.com">Myname</a>
+          Copyright &copy; 2021 LG Electronics. All Rights Reserved.
         </div>
       </div>
     </footer>
   </div>
-</body>
+  <!-- Swiper JS -->
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 4000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+
+  </body>
 </html>

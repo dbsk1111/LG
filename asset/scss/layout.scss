@@ -33,6 +33,8 @@
          a{
            line-height: 60px;
            height: 60px;
+           color: $fontColorBlack;
+           font-weight: 500;
          }
          &:hover{
            .submenu{
@@ -47,10 +49,12 @@
            border: 1px solid $borderColor;
            visibility: hidden;
            top: calc( 100% - 3px );
-           left: 0;
+           left: 50%;
            text-transform: capitalize;
+           transform: translateX( -50% );
            opacity: 0;
            transition: opacity .4s, top .4s;
+           text-align: center;
            li{
              width: 100%;
              margin: 0;
@@ -66,7 +70,7 @@
                height: 40px;
              }
              &:hover{
-               background: $gbtnColor;
+               background: $point;
                a{
                  color: white;
                }
@@ -144,9 +148,6 @@
        li{
         border-bottom: 1px solid $borderColorSub;
         padding: 10px 0;
-        a{
-          color: $fontColorBasic;
-        }
         &:nth-child(1){
          padding-top: 0;
         }
@@ -154,9 +155,6 @@
      }
      p{
       line-height: 1.8;
-      a{
-        color: $fontColorBasic;
-      }
      }
      &.footer_logo{
        flex: 0 0 160px;
