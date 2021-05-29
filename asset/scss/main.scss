@@ -2,6 +2,12 @@
 .mainbanner{
   height: 550px;
   background: url('../img/main_visual.jpg') no-repeat center / cover;
+  &.product{
+    background-image: url('../img/product/bg_conBoxType05_2_pc.webp');
+    .maintitle{
+      text-align: left;
+    }
+  }
   .maintitle{
     position: relative;
     top: 35%;
