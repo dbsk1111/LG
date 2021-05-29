@@ -444,6 +444,10 @@ table a {
   vertical-align: bottom;
 }
 
+#map {
+  margin-bottom: 50px;
+}
+
 #wrap {
   width: 1320px;
   margin: 0 auto;
