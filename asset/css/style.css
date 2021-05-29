@@ -327,8 +327,8 @@ address {
 }
 
 .gbtn.gray:hover {
-  color: auto;
-  background: auto;
+  color: #fff;
+  background: #666;
 }
 
 .gbtn.gray:before {

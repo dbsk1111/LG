@@ -103,12 +103,11 @@
                 <li><span>대표번호</span>&nbsp;<a href="tel:+82-02-3777-1114">02-3777-1114</a></li>
                 <li><span>제품 및 서비스 문의</span>&nbsp;<a href="tel:+82-1544-7777">1544-7777</a></li>
               </ul>
-              </p>
             </div>
             <div class="column news">
               <h4>NEWS</h4>
               <p>LG전자 홈페이지 서비스 일시 점검 안내, 항상 LG전자 홈페이지를 이용해주셔서 감사드립니다. 보다 나은 서비스를 제공하기 위한 시스템 점검 작업으로 해당 작업 시간 동안 서비스 이용이 일시 중지될 예정이오니, 이용에 참고하여 주시기 바랍니다.</p>
-              <form action="">
+              <form action="#">
                 <input type="search" name="search">
                 <input type="submit" value="검색">
               </form>
@@ -125,27 +124,27 @@
     </footer>
   </div>
 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e23fb8a74608bb6361365dbb0bf419f4"></script>
-<script defer>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(37.527950818442996, 126.92920073907916), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+<script>
+  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+      mapOption = {
+          center: new kakao.maps.LatLng(37.527950818442996, 126.92920073907916), // 지도의 중심좌표
+          level: 3 // 지도의 확대 레벨
+      };
+  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
-// 마커가 표시될 위치입니다
-var markerPosition  = new kakao.maps.LatLng(37.527950818442996, 126.92920073907916);
+  // 마커가 표시될 위치입니다
+  var markerPosition  = new kakao.maps.LatLng(37.527950818442996, 126.92920073907916);
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
+  // 마커를 생성합니다
+  var marker = new kakao.maps.Marker({
+      position: markerPosition
+  });
 
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
+  // 마커가 지도 위에 표시되도록 설정합니다
+  marker.setMap(map);
 
-// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-// marker.setMap(null);
+  // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+  // marker.setMap(null);
 </script>
 </body>
 </html>
