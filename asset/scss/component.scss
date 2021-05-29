@@ -307,35 +307,54 @@
 
 
 
-
+.notice_new:before{
+  content: 'NEW ';
+  position: relative;
+  margin-right: 10px;
+  top: -2px;
+  color: $point;
+  font-size: $fontSizeSmall;
+}
 
 //table
 table{
   width: 100%;
   table-layout: fixed;/*table의 너비를 고정할때 : 각각의 셀요소의 너비가 고정값이 있다면 늘어나거나 줄어들지않게 한다*/
   border-collapse: collapse;
-  thead{
-    th{
-      color: #fff;
-      background: $tableBg;
-    }
+  border-top: 1px solid $borderColor;
+  &.middle_size{
+    width: 50%;
+    table-layout: auto;
   }
   th{
+    color: $fontColorTitle;
+    background: $tableBg;
     padding: 20px 15px;
     text-align: left;
     font-weight: 500;
-    font-size: 12px;
-    color: $fontColorPrimary;
+    font-size: $fontSizeNormal;
+    // color: $fontColorPrimary;
     text-transform: uppercase;
+    &:nth-child(2){
+      width: 148px;
+    }
+    &:nth-child(3){
+      width: 128px;
+    }
   }
-
   td{
     padding: 15px;
     text-align: left;
     vertical-align: middle;
-    font-weight: 300;
-    font-size: 12px;
-    color: $fontColorPrimary;
-    border-bottom: 1px solid $borderColor;
+    // font-weight: 300;
+    font-size: $fontSizeNormal;
+    // color: $fontColorPrimary;
+    border-bottom: 1px solid $borderColorLight;
+  }
+  th, td:not(:first-child){
+    text-align: center;
+  }
+  a{
+    color: $fontColorBasic;
   }
 }
