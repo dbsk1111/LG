@@ -765,10 +765,6 @@ body.subpage main .container .inner + .inner {
   border-top: 1px solid #ddd;
 }
 
-body.subpage main .container .inner table {
-  margin-top: 50px;
-}
-
 body.subpage main .container .inner table + .gbtn {
   margin-top: 20px;
   float: right;
