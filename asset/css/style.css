@@ -392,10 +392,6 @@ address {
   background: url(../img/download_icon.png) no-repeat center/cover;
 }
 
-.point {
-  color: #a50034;
-}
-
 .bubble {
   margin: 0 auto;
   padding: 0 1%;
@@ -407,6 +403,10 @@ address {
   background: #a50034;
   border-radius: 50px;
   box-sizing: border-box;
+}
+
+.point {
+  color: #a50034;
 }
 
 .black {
@@ -565,7 +565,7 @@ table a {
   text-transform: capitalize;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity .4s, top .4s;
+  transition: .4s;
   text-align: center;
 }
 
@@ -758,7 +758,7 @@ body.subpage main .container #lnb ul li a:hover {
 }
 
 body.subpage main .container #lnb ul li a.on {
-  color: white;
+  color: #fff;
   background: #a50034;
 }
 

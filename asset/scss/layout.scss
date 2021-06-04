@@ -53,7 +53,7 @@
            text-transform: capitalize;
            transform: translateX( -50% );
            opacity: 0;
-           transition: opacity .4s, top .4s;
+           transition: .4s;
            text-align: center;
            li{
              width: 100%;
@@ -81,19 +81,9 @@
      }
    }
   }
- // 한 줄짜리 푸터
- // #footer{
- //   margin-top: 50px;
- //   height: 80px;
- //   line-height: 80px;
- //   text-align: center;
- //   border-top: 1px solid $borderColor;
- //   color: $fontColorPrimary;
- // }
 
  // 푸터
   #footer{
-   // color: $borderColorSub;
    font-size: 14px;
    .footer_top{
     padding: 60px 0 30px;
@@ -202,9 +192,7 @@
         }
         &[type=submit]{
          background: $gbtnColor;
-         // border: 0;
          width: 35%;
-         // padding: 6px 0;
          color: #fff;
         }
        }
