@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('dd').css('display','none')
   $('dt').click(function(){
     if( !$(this).hasClass('on')){

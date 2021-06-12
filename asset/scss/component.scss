@@ -30,7 +30,6 @@
     }
   }
 }
-
 .box{
   display: flex;
   .items{
@@ -264,7 +263,6 @@
     background: #fff;
   }
 }
-
 // general button
 .gbtn{
   display: inline-block;
@@ -311,7 +309,6 @@
     }
   }
 }
-
 .bubble{
   margin: 0 auto;
   padding: 0 1%;
@@ -324,15 +321,12 @@
   border-radius: 50px;
   box-sizing: border-box;
 }
-
 .point{
   color: $primaryColor;
 }
-
 .black{
   color: $fontColorTitle;
 }
-
 .notice_new:before{
   content: 'NEW ';
   position: relative;
@@ -342,10 +336,9 @@
   font-size: $fontSizeSmall;
 }
 
-//table
 table{
   width: 100%;
-  table-layout: fixed;/*table의 너비를 고정할때 : 각각의 셀요소의 너비가 고정값이 있다면 늘어나거나 줄어들지않게 한다*/
+  table-layout: fixed;
   border-collapse: collapse;
   border-top: 1px solid $borderColor;
   &.middle_size{
@@ -382,7 +375,6 @@ table{
     color: $fontColorBasic;
   }
 }
-
 .pagination{
   margin-top: 20px;
   text-align: center;
@@ -403,7 +395,6 @@ table{
     }
   }
 }
-
 #map{
   margin-bottom: 50px;
 }

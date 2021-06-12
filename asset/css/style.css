@@ -425,7 +425,6 @@ address {
 table {
   width: 100%;
   table-layout: fixed;
-  /*table의 너비를 고정할때 : 각각의 셀요소의 너비가 고정값이 있다면 늘어나거나 줄어들지않게 한다*/
   border-collapse: collapse;
   border-top: 1px solid #666;
 }

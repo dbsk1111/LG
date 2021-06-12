@@ -7,9 +7,6 @@
   <link rel="stylesheet" href="../asset/css/style.css">
   <link rel="shortcut icon" href="../asset/img/favicon.ico">
   <script src="../asset/js/jquery-3.6.0.js"></script>
-  <!--[if lt IE 9]>
-<script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 </head>
 <body class="subpage">
   <div id="wrap">
@@ -57,14 +54,14 @@
                 <div id="map" style="width:100%;height:500px;"></div>
                 <h3 class="title">LG트윈타워</h3>
                 <table class="middle_size">
-                    <tr>
-                      <th>주소</th>
-                      <td><address>서울시 영등포구 여의대로 128</address></td>
-                    </tr>
-                    <tr>
-                      <th>대표전화</th>
-                      <td><a href="tel:+82-02-3777-1114">02-3777-1114</a></td>
-                    </tr>
+                  <tr>
+                    <th>주소</th>
+                    <td><address>서울시 영등포구 여의대로 128</address></td>
+                  </tr>
+                  <tr>
+                    <th>대표전화</th>
+                    <td><a href="tel:+82-02-3777-1114">02-3777-1114</a></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -125,26 +122,17 @@
   </div>
 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e23fb8a74608bb6361365dbb0bf419f4"></script>
 <script>
-  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+  var mapContainer = document.getElementById('map'),
       mapOption = {
-          center: new kakao.maps.LatLng(37.527950818442996, 126.92920073907916), // 지도의 중심좌표
-          level: 3 // 지도의 확대 레벨
+          center: new kakao.maps.LatLng(37.527950818442996, 126.92920073907916),
+          level: 3
       };
-  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-  // 마커가 표시될 위치입니다
+  var map = new kakao.maps.Map(mapContainer, mapOption);
   var markerPosition  = new kakao.maps.LatLng(37.527950818442996, 126.92920073907916);
-
-  // 마커를 생성합니다
   var marker = new kakao.maps.Marker({
       position: markerPosition
   });
-
-  // 마커가 지도 위에 표시되도록 설정합니다
   marker.setMap(map);
-
-  // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-  // marker.setMap(null);
 </script>
 </body>
 </html>
