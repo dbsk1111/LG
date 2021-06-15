@@ -221,6 +221,7 @@
     color: $fontColorTitle;
     font-weight: 500;
     border-top: 1px solid $borderColorLight;
+    cursor: pointer;
     &:before{
       content: 'Q';
       position: absolute;

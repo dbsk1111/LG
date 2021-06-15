@@ -291,6 +291,7 @@ address {
   color: #333;
   font-weight: 500;
   border-top: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .faq_bbs dt:before {
